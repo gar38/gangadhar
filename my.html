@@ -1,0 +1,30 @@
+<html>
+<head>
+<script>
+
+function validate()
+{
+		var fn = localStorage.getItem("fn");
+		var mn = localStorage.getItem("mn");
+                var ln = localStorage.getItem("ln");
+                var mob = localStorage.getItem("mob");
+                var em = localStorage.getItem("em");
+                var DOB=localStorage.getItem("DOB");
+                var ad = localStorage.getItem("ad");
+		document.getElementById("my").innerHTML = "The Details entered by the user<br><br>"
+		document.getElementById("my").innerHTML += "first name: <b>"+ fn +"</b><br>";
+		document.getElementById("my").innerHTML += "The middle name is: <b>"+ mn +"</b><br>";
+                document.getElementById("my").innerHTML += "The last name is: <b>"+ ln +"</b><br>";
+                document.getElementById("my").innerHTML += "The mobile number is: <b>"+ mob +"</b><br>";
+                document.getElementById("my").innerHTML += "The your email is: <b>"+ em +"</b><br>";
+                document.getElementById("my").innerHTML += "The address is: <b>"+ ad +"</b><br>";
+}
+
+
+</script>
+</head>
+<body onload="validate()">
+<p id="my">
+</p>
+</body>
+</html>

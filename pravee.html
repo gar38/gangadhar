@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>HTML form</title>
+<script>
+function check(){
+var usname="praveen";
+var psd="1234";
+
+var name=document.getElementById("name").value;
+localStorage.setItem("name",name);
+if(name !== usname){
+alert("Invalid username");
+
+return false;
+}
+
+var password = document.getElementById("password").value;
+
+if(password !== psd){
+alert("Invalid password");
+return false;
+}
+}
+
+</script>
+</head>
+<body>
+<center>
+<h2>Registration form</h2>
+<form action="ppp.html">
+  username:<input type="text" name="name" id="name"><br><br>
+  password:<input type="password" name="password" id="password"><br><br>
+
+  <input type="submit" value="login" onclick=" return check()">
+</form>
+</center>
+</body>
+</html>
